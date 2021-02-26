@@ -9,13 +9,16 @@
   "dependencies": {
     "express": "^4.17.1"
   },
+  "engines": {
+    "node": "14.15.4"
+  },
   "scripts": {
-    "start": "node server.js"
+    "start": "node app.js"
   },
   "name": "futures-2021-prototype",
   "version": "1.0.0",
   "description": "Proof of concept for DE3 Futures 2021 DLT project",
-  "main": "server.js",
+  "main": "app.js",
   "type": "module",
   "author": "Louis Horrell Mimi Reyburn",
   "license": "ISC"
