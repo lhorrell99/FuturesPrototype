@@ -9,8 +9,6 @@ app.get("/", (req, res) => {
     res.send(`message ${msg} recorded on devnet`);
 });
 
-console.log(msg)
-
 let port = process.env.PORT;
 if (port == null || port == "") {
     port = 8080;
