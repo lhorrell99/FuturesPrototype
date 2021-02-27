@@ -4,7 +4,8 @@ import express from "express";
 const app = express();
 
 app.get("/", (req, res) => {
-    res.send("Marcus Rashford");
+    message = req.query.msg;
+    res.send(message);
 });
 
 let port = process.env.PORT; // required for heroku
