@@ -4,7 +4,7 @@ import path from "path";
 import { fileURLToPath } from "url";
 import { sendTransaction } from "./iotaInterface.js";
 
-// setup __dirname property with ES module imports
+// setup __dirname property (not natively supported with ES module imports)
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
@@ -16,6 +16,7 @@ app.set("view engine", "html");
 app.set("views", __dirname + "/public");
 
 const transactionMiddleware = (req, res, next) => {
+    // lightweight request proccessor
     if (JSON.stringify(req.query) !== "{}") {
         // query parameters found in request - process transaction
         sendTransaction(req.query.msg)
