@@ -10,6 +10,7 @@
     "@iota/converter": "^1.0.0-beta.30",
     "@iota/core": "^1.0.0-beta.30",
     "express": "^4.17.1",
+    "mustache-express": "^1.3.0",
     "qrcode": "^1.4.4"
   },
   "engines": {

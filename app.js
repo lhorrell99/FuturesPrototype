@@ -1,25 +1,62 @@
 import express from "express";
+import mustacheExpress from "mustache-express";
+import path from "path";
+import { fileURLToPath } from "url";
 import { sendTransaction } from "./iotaInterface.js";
-import { buildIndex } from "./indexBuilder.js";
+// import { buildIndex } from "./indexBuilder.js";
+
+// setup __dirname property with ES module imports
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
+
+// setup mustache templating
+app.engine("html", mustacheExpress());
+app.set("view engine", "html");
+app.set("views", __dirname + "/public");
+
+// const transactionMiddleware = (req, res, next) => {
+//     if (JSON.stringify(req.query) !== "{}") {
+//         // query parameters found in request - process transaction
+//         // req.query.msg;
+//         sendTransaction(req.query.msg)
+//             .then((bundle) => {
+//                 return buildIndex(bundle[0].hash);
+//             })
+//             .then(() => {
+//                 console.log("inhere");
+//                 next();
+//             });
+//         // setTimeout(() => {
+//         //     console.log(req.query);
+//         //     next();
+//         // }, 1000);
+//     } else {
+//         // no query parameters - serve other static content
+//         console.log(req.path);
+//         next();
+//     }
+// };
+
+// const promise1 = new Promise((resolve, reject) => {
+//     setTimeout(() => {
+//         console.log("promise");
+//         resolve();
+//     }, 300);
+// });
 
 const transactionMiddleware = (req, res, next) => {
     if (JSON.stringify(req.query) !== "{}") {
         // query parameters found in request - process transaction
-        // req.query.msg;
         sendTransaction(req.query.msg)
             .then((bundle) => {
-                return buildIndex(bundle[0].hash);
+                res.render("index", { hash: bundle[0].hash });
             })
-            .then(() => {
-                console.log("inhere");
-                next();
+            .catch((error) => {
+                console.log(error);
+                res.send("server error");
             });
-        // setTimeout(() => {
-        //     console.log(req.query);
-        //     next();
-        // }, 1000);
     } else {
         // no query parameters - serve other static content
         console.log(req.path);
