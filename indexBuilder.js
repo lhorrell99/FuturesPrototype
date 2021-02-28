@@ -1,4 +1,7 @@
+import fs from "fs";
 
+const buildIndex = (transactionHash) => {
+    const data = `
     <!DOCTYPE html>
     <html>
         <head>
@@ -80,7 +83,7 @@
             <h2>Item recorded. Upload successful.</h2>
             <br>
             <br>
-            <a href="https://explorer.iota.org/devnet/transaction/dummylink">
+            <a href="https://explorer.iota.org/devnet/transaction/${transactionHash}">
                 <button class="btn">View in Tangle Explorer</button>
             </a>
             <div>
@@ -88,4 +91,15 @@
                 <img src="./images/iota-white.png" alt="Powered by Iota" style="width:200px">
             </div>
         </body>
-    </html>
+    </html>`;
+
+    fs.writeFile("./public/nonexist/index.html", data, (error) => {
+        if (error) {
+            throw error;
+        } else {
+            console.log("saved");
+        }
+    });
+};
+
+export { buildIndex };
