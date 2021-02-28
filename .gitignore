@@ -1,8 +1,8 @@
 .DS_Store
 .vscode/
 node_modules/
-/*.env
 npm-debug.log
 prototype.code-workspace
 package-lock.json
 QRCodes/
+/*.env

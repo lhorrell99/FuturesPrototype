@@ -24,7 +24,7 @@
   "description": "Proof of concept for DE3 Futures 2021 DLT project",
   "main": "app.js",
   "type": "module",
-  "author": "Louis Horrell Mimi Reyburn",
+  "author": "Louis Horrell, Mimi Reyburn",
   "license": "ISC",
   "repository": {
     "type": "git",
