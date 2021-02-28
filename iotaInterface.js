@@ -11,17 +11,17 @@ const sendTransaction = function (msg) {
     const minimumWeightMagnitude = 9;
 
     const address =
-        "HELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDHELLOWORLDH";
+        "UIRHGFXXUZKRVDIWO9GVRDBBITRCLDAGVNKMDCTAXIYWMVVVTKSGMHVAZHESQVV9OXRHNZZJVBASKTFZA";
 
     const seed =
-        "PUEOTSEITFEVEWCWBTSIZM9NKRGJEIMXTULBACGFRQK9IMGICLBKW9TTEVSDQMGWKBXPVCBMMCXWMNPDX";
+        "PAMCONCTZFSSVEIKALHS9YVXOYTZZIRZRIWXBJ9CZVYTNMVEMAA9QFRMRWZSEESMTSGLNICYHZFMUTUEO";
 
     const message = JSON.stringify({ message: msg });
     const messageInTrytes = Converter.asciiToTrytes(message);
 
     const transfers = [
         {
-            value: 0,
+            value: 5.0,
             address: address,
             message: messageInTrytes,
         },
