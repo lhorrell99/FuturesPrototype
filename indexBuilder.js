@@ -93,7 +93,7 @@ const buildIndex = (transactionHash) => {
         </body>
     </html>`;
 
-    fs.writeFile("./public/nonexist/index.html", data, (error) => {
+    fs.writeFile("./public/index.html", data, (error) => {
         if (error) {
             throw error;
         } else {

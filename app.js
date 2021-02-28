@@ -1,13 +1,21 @@
 import express from "express";
 import { sendTransaction } from "./iotaInterface.js";
+import { buildIndex } from "./indexBuilder.js";
 
 const app = express();
 
 const transactionMiddleware = (req, res, next) => {
     if (JSON.stringify(req.query) !== "{}") {
         // query parameters found in request - process transaction
-        req.query.msg;
-        sendTransaction(msg);
+        // req.query.msg;
+        sendTransaction(req.query.msg)
+            .then((bundle) => {
+                return buildIndex(bundle[0].hash);
+            })
+            .then(() => {
+                console.log("inhere");
+                next();
+            });
         // setTimeout(() => {
         //     console.log(req.query);
         //     next();
