@@ -21,7 +21,7 @@ const sendTransaction = function (msg) {
 
     const transfers = [
         {
-            value: 5,
+            value: 0,
             address: address,
             message: messageInTrytes,
         },
