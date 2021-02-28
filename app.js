@@ -18,11 +18,6 @@ app.get("/", (req, res) => {
         .then((bundle) => {
             // console.log("sending hash bundle...");
             // res.send(bundle[0].hash);
-            // res.sendFile(
-            //     __dirname + "/public/index.html",
-            //     __dirname + "/public/images/iota-white.png"
-            //     // __dirname + "/public/fonts/Metropolis-Bold.otf"
-            // );
             // // res.sendFile(__dirname + "/public/images/iota-white.png");
             // // res.sendFile(__dirname + "/public/index.html");
             express.static;
