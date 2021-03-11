@@ -1,6 +1,6 @@
 # FuturesPrototype
-Proof of concept for DE3 Futures 2021 DLT project
-A 2-minute explanation of the project : https://youtu.be/tBxpfw7ndc4
+Proof of concept for DE3 Futures 2021 DLT project.
+Watch our 2-minute explanation of the project : https://youtu.be/tBxpfw7ndc4
 
 This QR code is part of a proof of concept for a retail-facing API for our system. It represents a food item such as an apple. Scanning it automatically adds the item to a distributed ledger. Scan it to see what we've created!
 
