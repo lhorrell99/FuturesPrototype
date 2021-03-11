@@ -4,7 +4,7 @@ Watch our 2-minute explanation of the project : https://youtu.be/tBxpfw7ndc4
 
 We created a proof of concept for a retail-facing API for our system. A QR code represents a food item such as an apple. Scanning it automatically adds the item to a distributed ledger. 
 
-https://user-images.githubusercontent.com/79009541/110790448-f2ffeb80-8268-11eb-88f1-a8d4ed28b469.mp4
+![prototype](https://user-images.githubusercontent.com/79009541/110792326-26dc1080-826b-11eb-92c5-e98bcb24f910.gif)
 
 Scan it to see!
 
