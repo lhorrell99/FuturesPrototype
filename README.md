@@ -1,5 +1,5 @@
 # The Fair Food Framework
-Proof of concept for DE3 Futures 2021 DLT project, facilitating food security through food waste reduction by systemising the way surplus food is redistributed to emergency food aid charities and food banks.
+Proof of concept for a Design Engineering Futures project using DLT, facilitating food security through food waste reduction by systemising the way surplus food is redistributed to emergency food aid charities and food banks.
 
 Watch our 2-minute explanation of the project : https://youtu.be/tBxpfw7ndc4
 
@@ -11,8 +11,8 @@ Scan and see!
 
 ![qr_fff](https://user-images.githubusercontent.com/79009541/110525932-17df4c00-810d-11eb-8bf4-38dc1310aa8e.png)
 
-You can view our full project report here: [Group9-Fair Food.pdf](https://github.com/lhorrell99/FuturesPrototype/files/6124241/Group9-Fair.Food.pdf)
+You can view our full project report [here](https://github.com/lhorrell99/FuturesPrototype/files/6124241/Group9-Fair.Food.pdf)
 
 A Third-Year Design Engineering Futures Project at Imperial College London by Hind Arekat, Louis Horrell, Mimi Reyburn, Christina-Georgia Serghides, Harvey Wong.
 
-With special thanks to Dr David Boyle, Prof Robert Shorten, Andrew Cullen and Pietro Ferraro for their guidance, knowledge and support. We'd also like to thank Dr Nan Li, Dr Stephen Green, Dr Navin Ramachandran, Judith Batchelar OBE, Christopher Wilsion and Molly Worboys Sayers for their help and participation. 
+With special thanks to Dr David Boyle, Prof Robert Shorten, Andrew Cullen and Pietro Ferraro for their guidance, knowledge and support. We'd also like to thank Dr Nan Li, Dr Stephen Green, Dr Navin Ramachandran, Judith Batchelar OBE, Christopher Wilson and Molly Worboys Sayers for their help and participation. 
