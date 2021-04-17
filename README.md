@@ -9,7 +9,7 @@ We created a proof of concept for a retail-facing API for our system. A QR code 
 
 Scan and see!
 
-![qr_fff](https://user-images.githubusercontent.com/79009541/110525932-17df4c00-810d-11eb-8bf4-38dc1310aa8e.png)
+![image](https://user-images.githubusercontent.com/32883278/115129073-86e87400-9fda-11eb-884c-7d63996de37e.png)
 
 You can view our full project report [here](https://github.com/lhorrell99/FuturesPrototype/files/6124241/Group9-Fair.Food.pdf)
 
